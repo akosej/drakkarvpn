@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
+import bg from './assets/images/bg.png';
 import { GetProfiles, SaveProfile, DeleteProfile, Connect, Disconnect, IsRunning, GetMetrics } from "../wailsjs/go/main/App";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
 
@@ -91,7 +92,7 @@ function App() {
     <div className="layout">
       <div className="sidebar">
         <div className="sidebar-header">
-          <h2>AkosVPN</h2>
+          <h2></h2>
           <button onClick={() => { 
             setShowForm(true); 
             setFormData({id: '', name: '', privateKey: '', publicKey: '', address: '10.0.0.2/24', dns: '8.8.8.8', endpoint: '', allowedIPs: '0.0.0.0/0'}); 

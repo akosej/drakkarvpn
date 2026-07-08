@@ -66,7 +66,9 @@ func NewApp() *App {
 // startup is called when the app starts. The context is saved
 // so we can call the runtime methods
 func (a *App) startup(ctx context.Context) {
+	log.Println("Ejecutando startup de la aplicación...")
 	a.ctx = ctx
+	log.Println("Startup completado.")
 }
 
 func (a *App) loadProfiles() {

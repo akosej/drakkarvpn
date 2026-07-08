@@ -3,6 +3,10 @@ body {
   font-family: 'Inter', 'Segoe UI', sans-serif;
   background-color: #121212;
   color: #e0e0e0;
+  background-image: linear-gradient(rgba(18, 18, 18, 0.4), rgba(18, 18, 18, 0.4)), url('./assets/images/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .layout {
@@ -12,7 +16,8 @@ body {
 
 .sidebar {
   width: 300px;
-  background-color: #181818;
+  background-color: rgba(24, 24, 24, 0.5);
+  /* backdrop-filter: blur(10px); */
   border-right: 1px solid #282828;
   display: flex;
   flex-direction: column;
@@ -56,7 +61,7 @@ body {
 }
 
 .profile-item.active {
-  background-color: #2a2a2a;
+  background-color: #2a2a2a/50;
   border-left: 4px solid #007bff;
 }
 
@@ -74,6 +79,7 @@ body {
   flex: 1;
   padding: 40px;
   overflow-y: auto;
+  background-color: rgba(18, 18, 18, 0.4);
 }
 
 .dashboard {
@@ -113,7 +119,8 @@ body {
 }
 
 .metric-card {
-  background-color: #1e1e1e;
+  background-color: rgba(30, 30, 30, 0.6);
+  /* backdrop-filter: blur(5px); */
   padding: 25px;
   border-radius: 12px;
 }
@@ -131,14 +138,16 @@ body {
 }
 
 .chart-container {
-  background-color: #1e1e1e;
+  background-color: rgba(30, 30, 30, 0.6);
+  /* backdrop-filter: blur(5px); */
   padding: 25px;
   border-radius: 12px;
   margin-bottom: 30px;
 }
 
 .form-container {
-  background-color: #1e1e1e;
+  background-color: rgba(30, 30, 30, 0.6);
+  /* backdrop-filter: blur(5px); */
   padding: 30px;
   border-radius: 12px;
   max-width: 700px;
@@ -181,6 +190,7 @@ body {
   background-color: #007bff;
   color: white;
   border: none;
+  cursor: pointer;
   padding: 12px 25px;
   border-radius: 6px;
   font-weight: 600;
@@ -190,6 +200,7 @@ body {
   background-color: #333;
   color: #ccc;
   border: none;
+  cursor: pointer;
   padding: 12px 25px;
   border-radius: 6px;
 }
@@ -199,6 +210,7 @@ body {
   color: white;
   border: none;
   padding: 6px 12px;
+  cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
 }
@@ -208,6 +220,7 @@ body {
   color: white;
   border: none;
   padding: 6px 12px;
+  cursor: pointer;
   border-radius: 4px;
 }
 
@@ -217,6 +230,7 @@ body {
   border: 1px solid #333;
   padding: 10px 20px;
   border-radius: 6px;
+  cursor: pointer;
   margin-right: 12px;
 }
 
@@ -225,6 +239,7 @@ body {
   color: #ff4444;
   border: 1px solid #ff444433;
   padding: 10px 20px;
+  cursor: pointer;
   border-radius: 6px;
 }
 
